@@ -5,19 +5,19 @@ module "aft" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "xxxxxxxx"
-    AccountName  = "aft"
+    AccountEmail = "dmarcocci.aws.lab4@dxc.com"
+    AccountName  = "account factory terraform"
     # Syntax for top-level OU
     ManagedOrganizationalUnit = "Aft"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
-    SSOUserEmail     = "do-not-use@example.com"
-    SSOUserFirstName = "do-not-use"
-    SSOUserLastName  = "do-not-use"
+    SSOUserEmail     = "dmarcocci.aws.lab1@dxc.com"
+    SSOUserFirstName = "Daniele"
+    SSOUserLastName  = "Marcocci"
   }
 
   account_tags = {
-    "ABC:Owner"       = "owner@example.com"
+    "ABC:Owner"       = "dmarcocci.aws.lab1@dxc.com"
     "ABC:Environment" = "Prod"
     "ABC:Project"     = "LandingZone"
   }
