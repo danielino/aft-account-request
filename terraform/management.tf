@@ -8,7 +8,7 @@ module "management" {
     AccountEmail = "dmarcocci.aws.lab1@dxc.com"
     AccountName  = "root account"
     # Syntax for top-level OU
-    ManagedOrganizationalUnit = "root"
+    ManagedOrganizationalUnit = "Root"
     # Syntax for nested OU
     # ManagedOrganizationalUnit = "Sandbox (ou-xfe5-a8hb8ml8)"
     SSOUserEmail     = "dmarcocci.aws.lab1@dxc.com"
